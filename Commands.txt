@@ -1,0 +1,59 @@
+Git commands
+
+#Format of commands
+command flags arguments
+- command is the CLI command
+- flags are options we give to the command to trigger certain behaviors, preceded by a -
+- arguments are what the command modifies or options for the command 
+
+#Configure Username and Email
+$ git config-- global user.name "Your Name"
+$ git config --gloval user.email "email"example.com"
+$ git config--list <- checks if changes are confirmed
+
+#Exit Git
+$ exit
+
+#Directories
+$ pwd <- displays path to current directory
+$ clear <- clears the commands in the CLI window
+$ ls <- lists files and folders in current directory
+ Notes: ls -a lists hidden and unhidden files&folders // ls -al details for such folders
+$ cd directory <- change directory
+ Notes: cd with no argument <- home directory
+        cd .. <- directory up one level
+$ mkdir directory <- creates new folder in directory
+$ touch name_file <- creates an empty file
+$ cp name_file_to_copy directory_in_which_to_copy <- copies a file in given directory
+ Notes: cp -r Dir_1 Dir_2 <- copies contents of dir_1 to dir_2
+$ rm name_file
+ Notes: rm -r Dir <- deletes entire directory NO UNDO
+$ mv name_file Dir <- moves the file into the new directory
+ Notes: Use mv to rename file: mv old_name new_name
+
+
+#Printing
+$ echo "message" - prints message
+$ data - prints today's date
+
+#Work with repos
+$ mkdir ~/test-repo <- create dir to store repo copy
+$ cd ~/test-repo <- navigate to the directory
+$ git init <- initialize a local Git repository 
+$ git remote add origin URL <- link the remote version and local copy
+$ git clone URL <- clone a copy of repo 
+
+#Working in repo
+$ git add . <- adds all new files
+ Notes: git add -u <- updates tracking for files w/ changed names or were deleted
+        git add -A <- does both 
+$ git commit -m "message" <- commits changes to version (message = useful description)
+ Notes: Only makes changes to local repo
+$ git push <- updates committed changes to remote repo
+$ git checkout -b branchname <- creates a branch 
+ Notes: git branch <- see what branch you are on
+        git checkout master <- go back to master branch
+
+
+
+
